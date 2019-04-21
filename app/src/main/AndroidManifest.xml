@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bconnect.b_connect">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/bclogowt"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/bclogowt"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <meta-data
+            android:name="firebase_analytics_collection_deactivated"
+            android:value="true" />
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+
+        <activity
+            android:name=".views.ChooseApplicationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".views.VisitByDateActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.ChooseVisitTypActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.BranchActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.ContractActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.RepresentativeDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".views.AdminActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.PharmaciesActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.PharmacyDetailsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.PharmaciesNotVisitActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".views.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".NotiService" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
+        <activity
+            android:name=".SupActivity"
+            android:label="@string/title_activity_sup"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".InstallActivity"
+            android:label="@string/title_activity_install"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SupMActivity"
+            android:label="@string/title_activity_sup_m"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupOActivity"
+            android:label="@string/title_activity_sup_o"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewConActivity"
+            android:label="@string/title_activity_new_con"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EditContActivity"
+            android:label="@string/title_activity_edit_con"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupSWActivity"
+            android:label="@string/title_activity_sup"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContractActivity"
+            android:label="@string/title_activity_contract"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BranchsActivity"
+            android:label="@string/title_activity_Branchs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupUnitActivity"
+            android:label="@string/title_activity_sup_uni"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClientByBranchActivity"
+            android:label="@string/title_activity_ClientBB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UnitApproveActivity"
+            android:label="@string/title_activity_sup_uni"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UnderInstalListActivity"
+            android:label="@string/title_activity_install"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".SupListActivity"
+            android:label="@string/title_activity_sup"
+            android:noHistory="true"
+            android:parentActivityName=".SupSearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SupSearchActivity"
+            android:label="@string/title_activity_sup"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AmountPaybackListActivity"
+            android:label="@string/title_activity_AmountPB"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AmountPAActivity"
+            android:label="@string/title_activity_AmountPB"
+            android:parentActivityName=".AmountPaybackListActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".MySaleListActivity"
+            android:label="@string/title_activity_MySall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MessListActivity"
+            android:label="@string/title_activity_mess_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WebActivity"
+            android:label="@string/title_activity_web" />
+    </application>
+
+</manifest>

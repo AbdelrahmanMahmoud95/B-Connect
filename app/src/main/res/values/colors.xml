@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWelcome">#0A2FE9</color>
+    <color name="colorPrimary">#0A2FE9</color>
+    <color name="colorPrimaryDark">#0A2FE9</color>
+    <color name="applicationColor">#0A2FE9</color>
+    <color name="colorAccent">#ED1C24</color>
+    <color name="colorDarkRed">#ED1C24</color>
+    <color name="colorDarkBlack">#000</color>
+
+    <color name="pressed_color">#fffb00</color>
+    <color name="default_color">#ffffff</color>
+
+
+
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="white">#ffffff</color>
+    <color name="lightgray">#ededed</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="red">#ff0041</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_transparnt">#8d000000</color>
+
+</resources>

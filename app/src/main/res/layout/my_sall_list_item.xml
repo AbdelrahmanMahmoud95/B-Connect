@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/LI_cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="13dp">
+
+            <TextView
+                android:id="@+id/client_nameT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="اسم المنشأة:"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat,UnknownId"
+                />
+
+            <TextView
+                android:id="@+id/client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/client_nameT"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="اسم المنشأة:"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat,UnknownId"
+                />
+
+            <TextView
+                android:id="@+id/client_codeT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_name"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/client_nameT"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="كود الصيدلية او السمة التجارية:"
+                />
+
+            <TextView
+                android:id="@+id/client_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_name"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_codeT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/client_name"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="كود الصيدلية:"
+                />
+
+            <TextView
+                 android:id="@+id/client_appT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_code"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/client_code"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="الموافقة:"
+             />
+
+            <TextView
+                android:id="@+id/client_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_code"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_appT"
+                android:gravity="center"
+                android:text="الموافقة:"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                app:layout_constraintBottom_toTopOf="@+id/client_code"
+                />
+
+            <TextView
+                android:id="@+id/client_stageT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_appT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/client_appT"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="موقف المنشأة:"
+           />
+
+            <TextView
+                android:id="@+id/client_stage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_app"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/client_stageT"
+                android:gravity="center"
+                android:text="موقف المنشأة:"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat" />
+
+            <TextView
+                android:id="@+id/client_branchT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_stageT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="الفرع او النشاط:"
+            />
+
+            <TextView
+                android:id="@+id/client_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_stage"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_branchT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="الفرع او النشاط:"
+                />
+
+            <TextView
+                android:id="@+id/client_con_typeT"
+                android:text="نوع العقد:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_branchT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+            <TextView
+                android:id="@+id/client_con_type"
+                android:text="نوع العقد:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_branch"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_con_typeT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+
+            <TextView
+                android:id="@+id/client_down_payT"
+                android:text="باقي التعاقد:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_con_typeT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+            <TextView
+                android:id="@+id/client_down_pay"
+                android:text="باقي التعاقد:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_con_type"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_down_payT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+            <TextView
+                android:id="@+id/client_monthly_valT"
+                android:text="الإشتراك:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_down_payT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+            <TextView
+                android:id="@+id/client_monthly_val"
+                android:text="الإشتراك:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_down_pay"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_monthly_valT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                 tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+            <TextView
+                android:id="@+id/client_send_dateT"
+                android:text="التاريخ:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_monthly_val"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+            <TextView
+                android:id="@+id/client_send_date"
+                android:text="التاريخ:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_monthly_val"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_send_dateT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/client_note"
+                android:text="ملاحظة"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/client_send_date"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                 android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#FF7B7A7A"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+            <TextView
+                android:id="@+id/client_text1"
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/client_note"
+                android:layout_gravity="center"
+
+                 android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#FF7B7A7A"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+            <TextView
+                android:id="@+id/client_snote"
+                android:text="ملاحظة مدير البيع"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/client_text1"
+                android:layout_gravity="center"
+                 android:layout_marginTop="15dp"
+                 android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#FF7B7A7A"
+                android:textSize="16sp"
+                 tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/Install_NS"
+    tools:context=".InstallActivity"
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/supm_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+        <Switch
+            android:id="@+id/instal_down_pay_sw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+             android:checked="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="تحصيل باقي التعاقد"
+            />
+
+        <Switch
+            android:id="@+id/instal_first_m_sw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+             android:checked="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="تحصيل اشتراك اول شهر"
+             />
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/install_down_payT"
+
+            >
+            <EditText
+                android:id="@+id/install_down_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="باقي التعاقد"
+                android:imeActionLabel="باقي التعاقد"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/install_first_month_valueT"
+
+
+            >
+            <EditText
+                android:id="@+id/install_first_month_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="اشتراك اول شهر"
+                android:imeActionLabel="اجمالي المبلغ"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/FMTit"
+            android:layout_alignParentTop="true"
+            android:text="الشهر:"
+
+            />
+        <Spinner
+            android:id="@+id/FMSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/yearFMTit"
+            android:layout_alignParentTop="true"
+            android:text="السنة:"
+
+            />
+        <Spinner
+            android:id="@+id/yearFMSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:textAlignment="center"/>
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/instal_visit_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="تاريخ الزيارة"
+                android:imeActionLabel="تاريخ التركيب"
+                android:imeOptions="actionUnspecified"
+                android:inputType="date"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:clickable="true"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nc_pay_up" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="(التحصيل)"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_doc_name" />
+
+        <Switch
+            android:id="@+id/sup_sw_rec_code_reuse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"
+             android:checked="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="استخدام رقم الإيصال مرة اخرى"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/nc_rep_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="رقم الإيصال"
+                android:imeActionLabel="رقم الإيصال"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nc_rest_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nc_con_value"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/nc_rep_code_vil_but"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorAccent"
+            android:text="التحقق من صلاحية رقم الإيصال"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_DateT"
+
+            >
+            <EditText
+                android:id="@+id/rec_Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="تاريخ الإيصال"
+                android:imeActionLabel="تاريخ الإيصال"
+                android:imeOptions="actionUnspecified"
+                android:inputType="date"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:clickable="true"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/paytypeTit"
+            android:layout_alignParentTop="true"
+            android:text="طريقة التحصيل:"
+
+            />
+        <Spinner
+            android:id="@+id/paytypeSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:textAlignment="center"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/banknameTit"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:text="اسم البنك:"
+            />
+        <Spinner
+            android:id="@+id/banknameSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textAlignment="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <EditText
+                android:id="@+id/chenam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="رقم الحوالة/الشيك"
+                android:imeActionLabel="رقم الحوالة/الشيك"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cheDateT"
+
+            >
+            <EditText
+                android:id="@+id/cheDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="تاريخ الحوالة/الشيك"
+                android:imeActionLabel="تاريخ الحوالة/الشيك"
+                android:imeOptions="actionUnspecified"
+                android:inputType="date"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:clickable="true"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/con_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="ملاحظة الزيارة"
+                android:imeActionLabel="ملاحظة الزيارة"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/install_down_con_send"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:text="تحصيل باقي التعاقد فقط"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+
+         android:layout_gravity="end"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/install_monthly_send"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary"
+        android:text="تحصيل الاشتراك فقط"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_below="@+id/install_down_con_send"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/nc_sendbut"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+         android:background="@color/colorPrimary"
+        android:text="إنهاء التدريب"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+         android:layout_gravity="end"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@+id/install_monthly_send"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+          />
+
+</LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

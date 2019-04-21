@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_key"
+    android:elevation="4dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/LI_cv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        >
+
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:paddingBottom="5dp">
+
+
+
+
+            <TextView
+                android:id="@+id/client_nameT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="اسم الصيدلية:"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="RtlCompat,UnknownId"
+                />
+
+            <TextView
+                android:id="@+id/client_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/client_nameT"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="اسم الصيدلية:"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="RtlCompat,UnknownId"
+                />
+
+            <TextView
+                android:id="@+id/client_codeT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_name"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/client_nameT"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="كود الصيدلية:"
+                />
+
+            <TextView
+                android:id="@+id/client_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_name"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_codeT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/client_name"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="كود الصيدلية:"
+                />
+
+            <TextView
+                 android:id="@+id/client_valueT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_code"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:paddingBottom="2dip"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/client_code"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="المبلغ المحصل:"
+             />
+
+            <TextView
+                android:id="@+id/client_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_code"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_valueT"
+                android:gravity="center"
+                android:text="المبلغ المحصل:"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                app:layout_constraintBottom_toTopOf="@+id/client_code"
+                />
+
+            <TextView
+                android:id="@+id/client_serviceT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_valueT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/client_valueT"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="نوع الخدمة:"
+           />
+
+            <TextView
+                android:id="@+id/client_service"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_value"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/client_serviceT"
+                android:gravity="center"
+                android:text="نوع الخدمة:"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints,RtlCompat" />
+
+            <TextView
+                android:id="@+id/client_monthly_dateT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_serviceT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="تاريخ الاشتراك:"
+            />
+
+            <TextView
+                android:id="@+id/client_monthly_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_service"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_monthly_dateT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                android:text="تاريخ الاشتراك:"
+                />
+
+            <TextView
+                android:id="@+id/client_rec_noT"
+                android:text="رقم إيصال:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_monthly_dateT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+            <TextView
+                android:id="@+id/client_rec_no"
+                android:text="رقم إيصال:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_monthly_date"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_rec_noT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+
+            <TextView
+                android:id="@+id/client_hewala_noT"
+                android:text="رقم الحوالة:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_rec_noT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+            <TextView
+                android:id="@+id/client_hewala_no"
+                android:text="رقم الحوالة:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_rec_no"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_hewala_noT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+            <TextView
+                android:id="@+id/client_hewala_dateT"
+                android:text="تاريخ الحوالة:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/client_hewala_noT"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+                />
+            <TextView
+                android:id="@+id/client_hewala_date"
+                android:text="تاريخ الحوالة:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/client_hewala_no"
+                android:layout_gravity="end"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_toLeftOf="@+id/client_hewala_dateT"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                 tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/client_pay_type"
+                android:text="طريقة الدفع"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/client_hewala_date"
+                android:layout_gravity="center"
+                android:layout_marginEnd="8dp"
+                 android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textColor="#FF7B7A7A"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints,RtlCompat"
+
+                />
+
+            <!--<TextView-->
+                <!--android:id="@+id/client_bank_name"-->
+                <!--android:text="البنك"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+
+                <!--android:layout_below="@+id/client_hewala_date"-->
+                <!--android:layout_gravity="center"-->
+                 <!--android:layout_marginTop="15dp"-->
+                <!--android:layout_toLeftOf="@+id/client_pay_type"-->
+                <!--android:gravity="end"-->
+                <!--android:textAlignment="textStart"-->
+                <!--android:textColor="#FF7B7A7A"-->
+                <!--android:textSize="18sp"-->
+                 <!--tools:ignore="MissingConstraints,RtlCompat"-->
+
+                <!--/>-->
+
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

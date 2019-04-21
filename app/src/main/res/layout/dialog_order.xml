@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:columnCount="2"
+        android:rowCount="2"
+
+        app:layout_constraintTop_toTopOf="@+id/B_textview">
+
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="@string/title_activity_order"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffff"
+            android:textSize="25dp"
+            android:onClick="orderopen"
+            />
+        <Button
+            android:id="@+id/button2"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_marginTop="10dp"
+            android:text="@string/title_activity_sup_uni"
+            android:background="@color/colorPrimary"
+            android:textColor="#ffff"
+            android:textSize="25dp"
+            android:onClick="supuni_open"
+            />
+
+
+    </GridLayout>
+</RelativeLayout>

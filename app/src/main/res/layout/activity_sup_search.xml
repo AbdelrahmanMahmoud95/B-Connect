@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity"
+     tools:showIn="@layout/content_login">
+
+
+
+    <LinearLayout
+        android:id="@+id/sup_search_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+         android:weightSum="1">
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+             android:id="@+id/cv"
+             android:layout_marginTop="20dp"
+            >
+
+            <LinearLayout
+                android:layout_below="@id/sup_search_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal|center">
+
+                <Switch
+                    android:id="@+id/nc_sw_new_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center"
+                    android:gravity="right|center"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:layout_marginRight="4dp"
+                    android:switchMinWidth="56dp"
+                    android:checked="true"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="البحث بكود الصيدلية او اسم الصيدلية"
+ />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sup_search_nameT"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/sup_search_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="اسم الصيدلية"
+                        android:imeActionLabel="اسم الصيدلية"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sup_search_codeT"
+
+                    >
+
+                    <EditText
+                        android:id="@+id/sup_search_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:hint="كود الصيدلية"
+                        android:imeActionLabel="كود الصيدلية"
+                        android:imeOptions="actionUnspecified"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:id="@+id/sup_search_bt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                     android:layout_below="@id/email_login_form"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ابحث"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:onClick="login"
+                    android:background="@color/colorAccent"
+                    android:textColor="#ffff"
+
+                    />
+
+                <TextView
+                    android:id="@+id/B_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="او"
+                    android:textAlignment="center"
+                    android:textColor="#787777"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/sup_search_bt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                      android:layout_below="@id/email_login_form"
+                    android:layout_gravity="center_horizontal"
+                    android:text="عرض جميع العملاء"
+                    android:textSize="20dp"
+                    android:onClick="login"
+                    android:background="#ca0091"
+                    android:textColor="#ffff"
+                    android:textStyle="bold"
+
+
+                    />
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".EditContActivity"
+    android:id="@+id/nCon_NestedScrollView"
+
+    >
+
+
+
+
+    <LinearLayout
+        android:id="@+id/supm_form"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+
+        android:weightSum="1">
+
+
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_marginBottom="35dp"-->
+
+            <!--android:id="@+id/cv"-->
+            <!--&gt;-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:padding="16dp">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/pharm_name"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:text="اسم الصيدلية"-->
+                    <!--android:textAlignment="viewEnd"-->
+                    <!--android:textSize="30sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/pharm_code"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/pharm_name"-->
+                    <!--android:text="كود الصيدلية"-->
+                    <!--android:textAlignment="viewEnd" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/pharm_add"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@+id/pharm_code"-->
+                    <!--android:textAlignment="viewEnd"-->
+                    <!--android:text="عنوان الصيدلية" />-->
+
+
+            <!--</RelativeLayout>-->
+
+        <!--</android.support.v7.widget.CardView>-->
+
+        <Switch
+            android:id="@+id/nc_sw_new_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center"
+            android:gravity="right|center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dp"
+            android:switchMinWidth="56dp"
+            android:checked="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="إنشاء كود جديد"
+            tools:text="إنشاء كود جديد"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nc_motaheda_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:hint="كود الصيديلة"
+            android:imeActionLabel="كود الصيديلة"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/switch1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/motaheda_code_vil_btn"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorAccent"
+            android:text="التحقق من كود الصيدلية"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nc_ph_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="اسم الصيدلية"
+            android:imeActionLabel="اسم الصيدلية"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/srnum" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nc_ph_add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="عنوان الصيدلية"
+            android:imeActionLabel="عنوان الصيدلية"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/branchname"
+            app:layout_constraintVertical_bias="0.031" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nc_ph_ph1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="رقم الهاتف الارضي"
+            android:imeActionLabel="رقم الهاتف الارضي"
+            android:inputType="number"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/nc_ph_ph2"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_add"
+            app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nc_ph_ph2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="رقم الهاتف المحمول"
+            android:imeActionLabel="رقم الهاتف الارضي"
+            android:maxLength="11"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_add"
+            app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/nc_ph_doc_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="اسم الصيدلي"
+            android:imeActionLabel="اسم الصيدلي"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_ph1"
+            app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"
+            android:text="نوع العقد:"
+            android:textColor="#000000"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_doc_name" />
+
+        <Spinner
+            android:id="@+id/nc_con_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/nc_con_value"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginRight="8dp"
+            android:text="نوع الصيدلية:"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/nc_running_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_des2" />
+
+        <Spinner
+            android:id="@+id/nc_phar_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:spinnerMode="dialog"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/nc_running_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/Mster_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="اسم الصيدلية الرئيسية"
+                android:imeActionLabel="اسم الصيدلية الرئيسية"
+                android:imeOptions="actionUnspecified"
+                android:inputType="text"
+                android:maxLines="1"
+                 android:singleLine="true"
+                android:clickable="true"
+                android:longClickable="false"
+                android:cursorVisible="false"
+                android:focusableInTouchMode="false"
+                android:textAlignment="center"
+                android:textStyle="bold"
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/nc_con_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textAlignment="center"
+            android:hint="الاشتراك الشهري"
+            android:imeActionLabel="الاشتراك الشهري"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nc_join_value"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_doc_name"
+            app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/nc_join_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="رسوم الإنضمام"
+            android:imeActionLabel="رسوم الإنضمام"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_doc_name"
+            app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nc_desT"
+
+            >
+            <EditText
+                android:id="@+id/nc_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="الخصم"
+                android:imeActionLabel="الخصم"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="9"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nc_pay_up"
+                app:layout_constraintTop_toBottomOf="@+id/nc_con_value"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/nc_pay_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="الدفعة المقدمة"
+            android:imeActionLabel="الدفعة المقدمة"
+            android:inputType="number"
+            android:maxLines="1"
+            android:maxLength="9"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_con_type"
+            app:layout_constraintVertical_bias="0.0" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/nc_rest_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="باقي التعاقد"
+            android:maxLength="9"
+            android:imeActionLabel="باقي التعاقد"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="center"
+            android:textStyle="bold"
+
+            />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--<EditText-->
+            <!--android:id="@+id/nc_running_value"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:hint="مصاريف التشغيل"-->
+            <!--android:imeActionLabel="مصاريف التشغيل"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLines="1"-->
+            <!--android:singleLine="true"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/nc_rest_value"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/nc_con_value"-->
+            <!--app:layout_constraintVertical_bias="0.0" />-->
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="(التركيب)"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_doc_name" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/nc_running_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:hint="تاريخ التركيب"
+            android:imeActionLabel="تاريخ التركيب"
+            android:imeOptions="actionUnspecified"
+            android:inputType="date"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:clickable="true"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_pay_up" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <!--<Switch-->
+            <!--android:id="@+id/nc_sw_old_app"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right|center"-->
+            <!--android:gravity="right|center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="4dp"-->
+            <!--android:switchMinWidth="56dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--android:text="برنامج سابق "-->
+            <!--tools:text="برنامج سابق"/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/nc_app_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:hint="اسم البرنامج"-->
+            <!--android:imeActionLabel="اسم البرنامج"-->
+            <!--android:inputType="text"-->
+            <!--android:singleLine="true"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/nc_sw_old_app"-->
+            <!--app:layout_constraintHorizontal_bias="1.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/nc_running_date"-->
+            <!--app:layout_constraintVertical_bias="0.0" />-->
+
+        <!--<Switch-->
+            <!--android:id="@+id/nc_sw_cont_dirc"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="right|center"-->
+              <!--android:gravity="right|center"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="4dp"-->
+            <!--android:switchMinWidth="56dp"-->
+            <!--android:textColor="@color/colorAccent"-->
+            <!--android:textSize="24sp"-->
+            <!--android:textStyle="bold"-->
+            <!--app:layout_constraintEnd_toEndOf="parent"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent"-->
+            <!--android:text="غير مباشر "-->
+            <!--tools:text="غير مباشر"-->
+            <!--/>-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/nc_con_dirc_name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:hint="اسم المسؤول"-->
+            <!--android:imeActionLabel="اسم البرنامج"-->
+            <!--android:inputType="text"-->
+            <!--android:singleLine="true"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textAlignment="center"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintEnd_toStartOf="@+id/nc_sw_old_app"-->
+            <!--app:layout_constraintHorizontal_bias="1.0"-->
+            <!--app:layout_constraintStart_toStartOf="parent"-->
+            <!--app:layout_constraintTop_toBottomOf="@+id/nc_app_name"-->
+            <!--app:layout_constraintVertical_bias="0.0" />-->
+
+
+
+        <!--                                                                  TASDID-->
+
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text="(التحصيل)"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nc_ph_doc_name" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/nc_rep_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:hint="رقم الإيصال"
+                android:imeActionLabel="رقم الإيصال"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/nc_rest_value"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nc_con_value"
+                app:layout_constraintVertical_bias="0.0" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/nc_rep_code_vil_but"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:background="@color/colorAccent"
+            android:text="التحقق من صلاحية رقم الإيصال"
+            android:textColor="#ffff"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:layout_marginBottom="14dp"
+
+            />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/rec_Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="تاريخ الإيصال"
+            android:imeActionLabel="تاريخ الإيصال"
+            android:imeOptions="actionUnspecified"
+            android:inputType="date"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:clickable="true"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+
+            />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:id="@+id/paytypeTit"
+            android:layout_alignParentTop="true"
+             android:text="طريقة التحصيل:"
+
+            />
+        <Spinner
+            android:id="@+id/paytypeSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textStyle="bold"
+             android:layout_gravity="end"
+            android:textAlignment="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/total_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                 android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="اجمالي المبلغ"
+                android:maxLength="9"
+                android:imeActionLabel="اجمالي المبلغ"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:id="@+id/banknameTit"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorDarkBlack"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            android:text="اسم البنك:"
+              />
+        <Spinner
+            android:id="@+id/banknameSp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textAlignment="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <EditText
+                android:id="@+id/chenam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                 android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="رقم الحوالة/الشيك"
+                android:imeActionLabel="رقم الحوالة/الشيك"
+                android:imeOptions="actionUnspecified"
+                android:inputType="number"
+                android:maxLines="1"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+        <EditText
+            android:id="@+id/cheDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="تاريخ الحوالة/الشيك"
+            android:imeActionLabel="تاريخ الحوالة/الشيك"
+            android:imeOptions="actionUnspecified"
+            android:inputType="date"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:clickable="true"
+            android:longClickable="false"
+            android:cursorVisible="false"
+            android:focusableInTouchMode="false"
+
+            />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <EditText
+                android:id="@+id/con_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                 android:textStyle="bold"
+                android:textAlignment="center"
+                android:hint="ملاحظة"
+                android:imeActionLabel="ملاحظة"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textMultiLine"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/nc_sendbut"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="حفظ"
+            android:textColor="#ffff"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:layout_marginTop="14dp"
+
+            />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
